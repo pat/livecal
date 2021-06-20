@@ -46,7 +46,7 @@ module Livecal
         event,
         from: from,
         to: to,
-        changes: recurring_changes
+        changes: calendar_source.recurring_changes
       )
     end
 
