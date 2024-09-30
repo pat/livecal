@@ -29,7 +29,9 @@ module Livecal
     attr_reader :source, :from, :to, :changes
 
     def changed?(instance)
-      changes.any? { |change| change.recurrence_id == instance.dtstart }
+      changes.any? do |change|
+        change.recurrence_id&.value_ical == instance.dtstart.value_ical
+      end
     end
 
     def duration
