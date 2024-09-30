@@ -4,6 +4,8 @@ on: [push, pull_request]
 
 jobs:
   test:
+    runs-on: ubuntu-latest
+
     strategy:
       fail-fast: false
       matrix:
@@ -21,6 +23,8 @@ jobs:
         run: bundle exec rspec
 
   rubocop:
+    runs-on: ubuntu-latest
+
     steps:
       - name: Check out code
         uses: actions/checkout@v4
