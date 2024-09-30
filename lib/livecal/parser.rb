@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require_relative "./calendar"
-require_relative "./event"
-require_relative "./recurring_events"
+require_relative "calendar"
+require_relative "event"
+require_relative "recurring_events"
 
 module Livecal
   class Parser

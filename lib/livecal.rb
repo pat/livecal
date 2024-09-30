@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require_relative "./livecal/calendar_source"
-require_relative "./livecal/parser"
+require_relative "livecal/calendar_source"
+require_relative "livecal/parser"
 
 module Livecal
   def self.from_url(url, from:, to:)
