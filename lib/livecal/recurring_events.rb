@@ -35,7 +35,7 @@ module Livecal
     end
 
     def duration
-      @duration ||= source.dtend - source.dtstart
+      @duration ||= source.dtend.to_i - source.dtstart.to_i
     end
 
     def instance_with_start(time)

@@ -9,11 +9,11 @@ module Livecal
     end
 
     def starts_at
-      dtstart.to_time
+      dtstart
     end
 
     def ends_at
-      dtend.to_time
+      dtend
     end
   end
 end
